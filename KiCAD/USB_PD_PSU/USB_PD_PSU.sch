@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "USB PD PSU"
+Date "2020-09-18"
+Rev "1.0"
+Comp "arduonics.com"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -34,7 +34,7 @@ F6 "V_OUTPUT" I L 2500 1900 50
 F7 "GND" B R 3750 2100 50 
 $EndSheet
 Wire Wire Line
-	1750 1800 2200 1800
+	1750 1800 2000 1800
 Wire Wire Line
 	2200 1800 2200 1700
 Wire Wire Line
@@ -54,10 +54,10 @@ S 4550 1100 2500 1500
 U 5F60344D
 F0 "LinReg" 50
 F1 "LinReg.sch" 50
-F2 "V_OUT" O R 7050 1400 50 
-F3 "GND" B L 4550 2300 50 
-F4 "V_IN_BUCK" I L 4550 1900 50 
-F5 "V_SNK_IN" I L 4550 1300 50 
+F2 "GND" B L 4550 2300 50 
+F3 "V_IN_BUCK" I L 4550 1900 50 
+F4 "V_SNK_IN" I L 4550 1300 50 
+F5 "V_OUT" O R 7050 1400 50 
 $EndSheet
 Wire Wire Line
 	4550 2300 4050 2300
@@ -115,4 +115,21 @@ F 3 "~" H 1400 3650 50  0001 C CNN
 	1    1400 3650
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2500 1900 2050 1900
+Wire Wire Line
+	2050 1900 2050 800 
+Wire Wire Line
+	2050 800  7350 800 
+Wire Wire Line
+	7350 800  7350 1400
+Wire Wire Line
+	7350 1400 7050 1400
+Wire Wire Line
+	2500 2100 2000 2100
+Wire Wire Line
+	2000 2100 2000 1800
+Connection ~ 2000 1800
+Wire Wire Line
+	2000 1800 2200 1800
 $EndSCHEMATC

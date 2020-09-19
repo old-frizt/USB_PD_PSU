@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "USB PD PSU"
+Date "2020-09-18"
+Rev "1.0"
+Comp "arduonics.com"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -188,7 +188,7 @@ Wire Wire Line
 Wire Wire Line
 	9800 3200 9950 3200
 Wire Wire Line
-	10900 1400 10600 1400
+	10900 1400 10750 1400
 Wire Wire Line
 	9100 1400 9150 1400
 $Comp
@@ -1494,10 +1494,6 @@ Wire Wire Line
 	9100 5400 9100 5450
 Connection ~ 9100 5400
 Wire Wire Line
-	9100 5050 9100 5000
-Wire Wire Line
-	9100 5000 8800 5000
-Wire Wire Line
 	8500 5000 8250 5000
 Wire Wire Line
 	9100 5800 9100 5750
@@ -1524,10 +1520,7 @@ F 3 "" H 9900 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 5000 9450 5000
-Wire Wire Line
 	9900 5000 9900 5150
-Connection ~ 9100 5000
 Wire Wire Line
 	9450 5000 9450 5200
 Connection ~ 9450 5000
@@ -2633,4 +2626,13 @@ Wire Wire Line
 	5300 7000 5300 7150
 Wire Wire Line
 	5300 7150 5550 7150
+Wire Wire Line
+	8800 5000 9450 5000
+Text HLabel 10750 1200 1    50   Output ~ 0
+V_OUT
+Wire Wire Line
+	10750 1200 10750 1400
+Connection ~ 10750 1400
+Wire Wire Line
+	10750 1400 10600 1400
 $EndSCHEMATC
