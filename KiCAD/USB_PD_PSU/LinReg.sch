@@ -2627,7 +2627,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 7150 5550 7150
 Wire Wire Line
-	8800 5000 9450 5000
+	8800 5000 9100 5000
 Text HLabel 10750 1200 1    50   Output ~ 0
 V_OUT
 Wire Wire Line
@@ -2635,4 +2635,9 @@ Wire Wire Line
 Connection ~ 10750 1400
 Wire Wire Line
 	10750 1400 10600 1400
+Wire Wire Line
+	9100 5050 9100 5000
+Connection ~ 9100 5000
+Wire Wire Line
+	9100 5000 9450 5000
 $EndSCHEMATC
